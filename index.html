@@ -1,22 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles.css/normalize.css">
+  <link rel="stylesheet" href="./styles.css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
 
-  Features
+<body>
+  <!-- header with a navbar and hero -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-logo">
+        <img src="./images/logo.svg" alt="header-logo" class="header-logo">
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#" class="nav-links">Features</a></li>
+          <li><a href="#" class="nav-links">Team</a></li>
+          <li><a href="#" class="nav-links">Sign In</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hero class="hero">
+      <img src="./images/illustration-1.svg" alt="header" class="img">
+      <div class="hero-bottom">
+        <h2 class="hero-heading">All your files in one secure location, accessible anywhere.</h2>
+        <p class="hero-sub-heading">Fylo stores all your most important files in one secure location. Access them
+          wherever you need, share and collaborate with friends family, and co-workers.</p>
+        <form class="form">
+          <label for="email">
+            <input type="email" name="email" id="email" size="32" placeholder="Enter your email..." required class="email" />
+          </label>
+          <div class="connect-button">
+            <input type="submit" value="Get Started For Free" class="btn">
+          </div>
+    </hero>
+  </header>
+  <main class="main">
+    <!-- fylo works section  -->
+    <section class="work-card">
+      <img src="./images/illustration-2.svg" alt="productive-img" class="img-2">
+      <div class="work-bottom">
+        <h2>Stay productive, wherever you are</h2>
+        <P>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
+          needs.</P>
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
+          attachments required.</p>
+        <div class="work-link">
+          <a href="#">See how Fylo works <img src="./images/icon-arrow.svg" alt="icon-arrow" class="arrow"> </a>
+        </div>
+        <div class="all-testimonials">
+          <div class="testimonials-cards">
+            <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become
+              a well-oiled collaboration machine.</p>
+            <div class="testimoinals-blog">
+              <img src="./images/avatar-testimonial.jpg" alt="profile-img" class="testimoinals-blog-img">
+              <div class="testimonials-blog-right">
+                <p class="testimonials-blog-heading">Satish Patel</p>
+                <p class="testimonials-blog-position">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+    <!-- <section class="all-testimonials">
+      <div class="testimonials-cards">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become
+          a well-oiled collaboration machine.</p>
+        <div class="testimoinals-blog">
+          <img src="./images/avatar-testimonial.jpg" alt="profile-img" class="testimoinals-blog-img">
+          <div class="testimonials-blog-right">
+            <p class="testimonials-blog-heading">Satish Patel</p>
+            <p class="testimonials-blog-position">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- call to action section  -->
+    <section class="call-to-action">
+      <div class="call-top">
+      <h2>Get early access today</h2>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
+        our support team would be happy to help you.</p>
+        </div>
+      <div class="connect">
+        <form class="form2">
+          <label for="email">
+            <input type="email" name="email" id="email" size="32" placeholder="Enter your email..." class="email" />
+          </label>
+          <div class="connect-button">
+            <input type="submit" value="Get Started For Free" class="btn">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="./images/logo.svg" alt="filter applied" class="bottom-logo">
+    </div>
+    <div class="bottom-grid">
+      <div class="contact">
+        <img src="./images/icon-phone.svg" alt="icon-phone" class="contact-icon">
+        <p>+1-543-123-4567</p>
+        <img src="./images/icon-email.svg" alt="icon-email" class="contact-icon">
+        <p>example@huddle.com</p>
+      </div>
+      <div class="pages">
+        <div class="first-page-links">
+          <a href="#">About Us</a>
+          <a href="#">Jobs</a>
+          <a href="#">Press</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="second-page-links">
+          <a href="">Contact Us</a>
+          <a href="">Terms</a>
+          <a href="">Privacy</a>
+        </div>
+      </div>
+      <div class="soical-links">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/mayur-arde/">Mayur Arde</a>.
+    </p>
+  </footer>
+  <!-- Features
   Team
   Sign In
 
@@ -61,13 +188,14 @@
 
   Contact Us
   Terms
-  Privacy
+  Privacy -->
 
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
+
 </html>
